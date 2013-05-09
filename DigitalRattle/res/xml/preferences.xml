@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:key="polyphonic"
+        android:id="@+id/polyphonic"
+        android:title="Polyphonic"
+        android:summary="Monophonic if unchecked"
+        android:defaultValue="true"
+        />
+    	
+    <CheckBoxPreference
+        android:key="major"
+        android:id="@+id/major"
+        android:title="Major Key"
+        android:summary="Twelve tone, chromatic key if unchecked"
+        android:defaultValue="true"
+        android:disableDependentsState="false"
+        />
+    
+	<ListPreference
+		android:key="key_signature"
+		android:id="@+id/key_signature"
+		android:title="Key Signature"
+		android:summary="Select a major key"
+		android:defaultValue="0"
+		android:entries="@array/keySigEntries"
+		android:entryValues="@array/keySigValues"
+		android:dependency="major"
+        />
+	
+	<ListPreference
+		android:key="start_note"
+		android:id="@+id/start_note"
+		android:title="Starting Note/Mode"
+		android:summary="The lowest playable note in the selected key"
+		android:defaultValue="0"
+		android:entries="@array/startEntries"
+		android:entryValues="@array/startValues"
+		android:dependency="major"
+        />
+	
+	<ListPreference 
+	    android:key="range"
+	    android:id="@+id/range"
+	    android:title="Note Range"
+	    android:summary="Begin with low, middle or higher notes"
+	    android:defaultValue="1"
+	    android:entries="@array/rangeEntries"
+	    android:entryValues="@array/rangeValues"
+	    />
+	
+	<CheckBoxPreference
+        android:key="vibrate"
+        android:id="@+id/vibrate"
+        android:title="Vibrate"
+        android:summary="Vibrate on shake"
+        android:defaultValue="true"
+        />
+
+</PreferenceScreen>

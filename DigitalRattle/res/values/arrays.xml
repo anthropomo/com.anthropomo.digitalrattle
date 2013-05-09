@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="keySigEntries">
+        <item name="C">C</item>
+        <item name="C#">C#</item>
+        <item name="D">D</item>
+        <item name="D#">D#</item>
+        <item name="E">E</item>
+        <item name="F">F</item>
+        <item name="F#">F#</item>
+        <item name="G">G</item>
+        <item name="G#">G#</item>
+        <item name="A">A</item>
+        <item name="A#">A#</item>
+        <item name="B">B</item>
+    </string-array>
+    <string-array name="keySigValues">
+        <item name="C">0</item>
+        <item name="C#">1</item>
+        <item name="D">2</item>
+        <item name="D#">3</item>
+        <item name="E">4</item>
+        <item name="F">5</item>
+        <item name="F#">6</item>
+        <item name="G">7</item>
+        <item name="G#">8</item>
+        <item name="A">9</item>
+        <item name="A#">10</item>
+        <item name="B">11</item>
+    </string-array>
+    <string-array name="startEntries">
+        <item name="C">C (Major, Ionian)</item>
+        <item name="D">D (Dorian)</item>
+        <item name="E">E (Phrygian)</item>
+        <item name="F">F (Lydian)</item>
+        <item name="G">G (MixoLydian)</item>
+        <item name="A">A (Minor, Aeolian)</item>
+        <item name="B">B (Locrian)</item>
+    </string-array>
+    <string-array name="startValues">
+        <item name="C">0</item>
+        <item name="D">2</item>
+        <item name="E">4</item>
+        <item name="F">5</item>
+        <item name="G">7</item>
+        <item name="A">9</item>
+        <item name="B">11</item>
+    </string-array>
+    <string-array name="rangeEntries">
+        <item name="low">Lower</item>
+        <item name="middle">Middle</item>
+        <item name="higher">Higher</item>
+    </string-array>
+    <string-array name="rangeValues">
+        <item name="low">0</item>
+        <item name="middle">1</item>
+        <item name="higher">2</item>
+    </string-array>
+        
+</resources>
