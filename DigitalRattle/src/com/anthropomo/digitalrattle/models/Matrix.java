@@ -26,7 +26,7 @@ public class Matrix implements IConfigConsumer, IScreenConsumer{
 	private void checkAndInit(){
 		if(haveCAndR && haveScreen){
 			initMatrix();
-			callback.onMatrixUpdate();
+//			callback.onMatrixUpdate();
 		}
 	}
 	

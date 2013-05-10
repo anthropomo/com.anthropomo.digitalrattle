@@ -19,12 +19,8 @@ public class ConfigController implements IScreenConsumer {
 		
     public ConfigController (CommandFactory factory, IEventPublisher eventPublisher) {
     	this.eventPublisher = eventPublisher;
-    	eventPublisher.registerSubscriber(this);
         config = factory.getConfigEvent();
-        List<ICommand> events = eventPublisher.getEventRecord();
-        for(ICommand e : events){
-        	e.execute(this);
-        }
+    	eventPublisher.registerSubscriber(this);
     }
     
     public void setConfig(float dpHeight, float dpWidth){

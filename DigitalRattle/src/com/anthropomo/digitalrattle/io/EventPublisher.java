@@ -17,7 +17,11 @@ public class EventPublisher implements IEventPublisher {
 	}
 	
 	public void reviewEvents(IEventSubscriber s){
+		List<ICommand> currentEvents = new Vector<ICommand>();
 		for(ICommand e : events){
+			currentEvents.add(e);
+		}
+		for(ICommand e : currentEvents){
 			e.execute(s);
 		}
 	}
