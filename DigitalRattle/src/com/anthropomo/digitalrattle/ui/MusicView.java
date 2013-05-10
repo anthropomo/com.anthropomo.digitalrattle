@@ -29,7 +29,7 @@ public class MusicView extends View implements OnTouchListener, MatrixConsumer {
 	}
 	
 	public MusicView(Context context, int circleDiam, IEventPublisher eventPublisher, INoteListener noteListener) {
-		super(context);
+		this(context);
 		this.matrix = new Matrix(eventPublisher, this);
 		this.circleDiam = (int)matrix.getSpaceWidth()*3;
 		this.noteListener = noteListener;
