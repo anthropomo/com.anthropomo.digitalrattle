@@ -44,7 +44,7 @@
 	    android:key="range"
 	    android:id="@+id/range"
 	    android:title="Note Range"
-	    android:summary="Begin with low, middle or higher notes"
+	    android:summary="Begin with lower, middle or higher notes"
 	    android:defaultValue="1"
 	    android:entries="@array/rangeEntries"
 	    android:entryValues="@array/rangeValues"
