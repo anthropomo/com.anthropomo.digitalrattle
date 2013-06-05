@@ -15,8 +15,8 @@ public class Matrix implements IConfigConsumer, IScreenConsumer{
 	private MatrixConsumer callback;
 	
 	public Matrix(IEventPublisher eventPublisher, MatrixConsumer callback){
-		eventPublisher.registerSubscriber(this);
 		this.callback = callback;
+		eventPublisher.registerSubscriber(this);
 	}
 	
 	public interface MatrixConsumer {
@@ -26,7 +26,7 @@ public class Matrix implements IConfigConsumer, IScreenConsumer{
 	private void checkAndInit(){
 		if(haveCAndR && haveScreen){
 			initMatrix();
-//			callback.onMatrixUpdate();
+			callback.onMatrixUpdate();
 		}
 	}
 	

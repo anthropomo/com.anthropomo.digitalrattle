@@ -1,7 +1,5 @@
 package com.anthropomo.digitalrattle.controllers;
 
-import java.util.List;
-
 import com.anthropomo.digitalrattle.io.CommandFactory;
 import com.anthropomo.digitalrattle.io.ConfigEvent;
 import com.anthropomo.digitalrattle.io.ICommand;
