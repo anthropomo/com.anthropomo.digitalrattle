@@ -32,6 +32,10 @@ public class PdController implements INoteListener, IPolyConsumer {
 		eventPublisher.registerSubscriber(this);
 	}
 	
+	/*
+	 * Receives lifecycle events from activity and calls necessary Pd methods
+	 */
+	
 	private class LifeCycler extends LifeCycleAdapter {
 
 		public LifeCycler(IEventPublisher eventPublisher) {

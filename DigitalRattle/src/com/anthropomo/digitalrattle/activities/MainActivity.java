@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		/*
-		 * Register subscribers, receives Events, notifies subscribers of events, distributes state
+		 * Register subscribers, receives Events, notifies subscribers of events
 		 */
 		eventPublisher = new EventPublisher();
 		
